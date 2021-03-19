@@ -20,8 +20,24 @@ function groupBy(array, prop){
     return result;
 }
 
+function renderP() {
+    document.body.insertAdjacentHTML("beforeend", '<p></p>');
+}
+
+document.body.addEventListener('click', renderP);
+
+
 module.exports = {
     Lodash,
     groupBy,
-    sum
+    sum,
+    renderP
 };
+
+//exports.Lodash = Lodash;
+// export default {
+//     Lodash,
+//     groupBy,
+//     sum
+// };
+

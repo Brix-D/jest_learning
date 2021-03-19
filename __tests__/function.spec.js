@@ -1,7 +1,21 @@
 //const sum = require('../functions/functions');
-// import {Lodash} from '../functions/functions'
+//import {Lodash, groupBy, sum} from '../functions/functions'
+let { JSDOM } = require("jsdom");
 
-const {Lodash, sum, groupBy} = require('../functions/functions');
+//let document = new JSDOM().window.document;
+JSDOM.env({
+    html: "<html><body></body></html>",
+    documentRoot: __dirname + '/js',
+    scripts: [
+        'functions.js'
+    ]
+}, function (err, window) {
+    console.log(window.loadFromJSDOM);
+});
+let window = document.defaultView;
+
+
+const {Lodash, sum, groupBy, renderP} = require('../functions/functions');
 
 describe("testing sum", () => {
     test("testing 1 + 2", ()=> {
@@ -67,5 +81,23 @@ describe("GroupBy function", () => {
     test("should not return array", () => {
         const arr = [1.1, 1.2, 3.9, 4.0, 4.1];
         expect(groupBy(arr, Math.trunc)).not.toBeInstanceOf(Array);
+    });
+});
+
+describe("Click test", ()=> {
+    test("should be clicked", (object, method) => {
+        //document.body.addEventListener('click', renderP);
+        //let render = jest.fn().mockImplementation(() => renderP);
+        console.log('--- document', document.body);
+        document.body.addEventListener('click', renderP);
+        let render = jest.spyOn(document.body, 'renderP', 'set');
+        //const doc =
+        // let event = document.createEvent("HTMLEvents");
+        // event.initEvent('click', false, true);
+        document.body.dispatchEvent(new Event('click', {bubbles: true}));
+
+        //events.click();
+        expect(render).toHaveBeenCalled();
+        render.mockClear();
     });
 });
