@@ -21,11 +21,14 @@ function groupBy(array, prop){
 }
 
 function renderP() {
-    document.body.insertAdjacentHTML("beforeend", '<p></p>');
+    document.body.insertAdjacentHTML("beforeend", '<h1>Hello</h1>');
 }
+// window.addEventListener('load', (event)=>{
+//     let h1 = document.getElementById('hello');
+//     h1.addEventListener('click', renderP);
+// });
 
-document.body.addEventListener('click', renderP);
-
+//h1.onclick = renderP;
 
 module.exports = {
     Lodash,

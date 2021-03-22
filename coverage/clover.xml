@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1616163404922" clover="3.2.0">
-  <project timestamp="1616163404922" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1616424294303" clover="3.2.0">
+  <project timestamp="1616424294303" name="All files">
+    <metrics statements="22" coveredstatements="21" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="8" elements="37" coveredelements="35" complexity="0" loc="22" ncloc="22" packages="1" files="3" classes="3"/>
+    <file name="async.js" path="D:\ПРОГРАММИРОВАНИЕ\Стажировка\jest_learning\functions\async.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+    </file>
+    <file name="functions.js" path="D:\ПРОГРАММИРОВАНИЕ\Стажировка\jest_learning\functions\functions.js">
+      <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="4"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="8" count="26" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="14" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="18" count="13" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+    </file>
+    <file name="mock.js" path="D:\ПРОГРАММИРОВАНИЕ\Стажировка\jest_learning\functions\mock.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="10" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>
